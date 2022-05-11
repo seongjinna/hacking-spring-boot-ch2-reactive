@@ -1,2 +1,7 @@
-package com.seongjin.springboot.reactive;public interface ItemRepository {
+package com.seongjin.springboot.reactive;
+
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+
+public interface ItemRepository extends ReactiveCrudRepository<Item, String> {
+
 }
